@@ -83,11 +83,28 @@
 
     <main>
         <h1>EJERCICIO 1 - Longuitud</h1><br>
-
-        <p>Ingrese una palabra y coloque lo que desea hacer con esa palabra</p>
-         
+<center>
+        <p>Ingrese una palabra y coloque lo que desea hacer con esa palabra</p><br>
+     
+        <form class="form-ejercicios">
+            <div class="group-form">
+                <label for="pal" class="form-label">Ingresa una palabra</label><br>
+                <input type="text" class="form-control" id="pal">
+            </div>
+            <div class="group-form">
+                <label>Elige una opcion</label><br>
+                <select class="form-select" id="opcion">
+                    <option value="1">Longitud</option>
+                    <option value="3">Minuscula</option>
+                    <option value="2">Mayuscula</option>
+                    <option value="4">Primer caracter</option>
+                </select>
+            </div><br>
+            <button type="submit" class="bo" onclick="palabra()">ACEPTAR</button>
+        </form>
+     </center>      
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
 </body>
 </html>
