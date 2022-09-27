@@ -160,44 +160,6 @@ a.selected{
  
 /*estilos formulario*/
 
-.modaltri{
-    background-color: rgba(0, 0,0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow: auto;
-    padding-top: 5%;
-    display: none;
-}
-
-.contenidotri{
-    background-color: white;
-    margin: auto;
-    width: 60%;
-    position: relative;
-    padding: 1rem;
-    animation-name: animarmodal;
-    animation-duration: 0.5s;
-}
-
-@keyframes animarmodal {
-    from{top: -300px; opacity: 0;}
-    to{top: 0; opacity: 1;}
-}
-
-.cerrarModaltri{
-    font-size: 2rem;
-    float: right;
-}
-
-.cerrarModaltri:hover{
-    cursor: pointer;
-}
-
-
-
 form label {
     color: black;
 }
@@ -218,10 +180,9 @@ form label {
 }
 
 .form-container{
-    background-color: rgba(36, 15, 15, 0.537);
     max-width: 40rem;
     width: 100%;
-    color: rgb(241, 237, 231);
+    color: rgb(2, 1, 1);
     padding: 3rem;
     margin: 50px auto;
   }
@@ -254,7 +215,8 @@ padding: 5px  10px;
 }
 
 .btn-enviar{
-    background-color: rgba(218, 143, 82, 0.74);
+    background-color: rgba(5, 4, 2, 0.74);
+    color:white;
     padding: 0.5rem 1rem;
     border-radius: 5px ;
     font-weight: bold;
@@ -263,7 +225,8 @@ padding: 5px  10px;
 }
 
 .btn-enviar:hover{
-    background-color: rgba(226, 122, 36, 0.74);
+    background-color: rgba(255, 255, 255, 0.74);
+    color: black;
 }
 
 .msn-error{
@@ -278,7 +241,7 @@ padding: 5px  10px;
 }
 
 .form-group label{
-    color: rgb(255, 255, 255);
+    color: rgb(7, 5, 5);
 }
 
 label{
