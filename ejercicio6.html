@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-6T</title>
+
+    <link rel="stylesheet" href="css/estilos4.css">
+    <link rel="icon" href="img/favicon.png">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4>Arnold Retavisca</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="index.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio1.html">
+                <div class="option">
+                    <i class="fa-solid fa-ruler-vertical" title="Portafolio"></i>
+                    <h4>Longitudes</h4>
+                </div>
+            </a>
+            
+            <a href="ejercicio2.html">
+                <div class="option">
+                    <i class="fa-duotone fa-temperature-list" title="Cursos"></i>
+                    <h4>Convertir Temperatura</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio3.html">
+                <div class="option">
+                    <i class="fa-regular fa-triangle" title="Blog"></i>
+                    <h4>Tipo de triangulo</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio4.html">
+                <div class="option">
+                    <i class="fa-thin fa-signature"></i>
+                    <h4>Validacion de nombres</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio5.html">
+                <div class="option">
+                    <i class="fa-regular fa-hexagon" title="Nosotros"></i>
+                    <h4>Figuras Geometricas</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio6.html">
+                <div class="option">
+                    <i class="fa-sharp fa-solid fa-badge-check" title="Formularios"></i>
+                    <h4>Formularios</h4>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <main>
+        <div class="form-container">
+            <h1 class="tittleform">Registro de usuario</h1><br>
+            <form id="frm-usuario" method="post">
+                <div class="form-group" id="g-tipodoc">
+                    <label for="tipodoc">Tipo de documento</label>
+                    <div class="form-group-input">
+                        <select name="tipodoc" id="tipodoc" class="frm-input" required>
+                            <option value="0">Seleccione su tipo de documento </option>
+                            <option value="0">Cedula de Ciudadania </option>
+                            <option value="0">Cedula de Extranjeria </option>
+                        </select>
+                        <span class="msn-error">Seleccione su tipo de documento</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-numdoc">
+                    <label for="numdoc">Numero de Documento</label>
+                    <div class="form-group-input">
+                        <input type="text" name="numdoc" id="numdoc" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Solo se puede ingresar numeros, min 5</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-nombre">
+                    <label for="nombre">Nombre</label>
+                    <div class="form-group-input">
+                        <input type="text" name="nombre" id="nombre" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Solo se puede ingresar caracteres alfanumericos</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-apellido">
+                    <label for="apellido">Apellido</label>
+                    <div class="form-group-input">
+                        <input type="text" name="apellido" id="apellido" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Solo se puede ingresar caracteres alfanumericos</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-fechanacimiento">
+                    <label for="fechanacimiento">Fecha Nacimiento</label>
+                    <div class="form-group-input">
+                        <input type="date" name="fechanacimiento" id="fechanacimiento" class="frm-input" required
+                            max="2002-12-31">
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Solo se puede ingresar caracteres alfanumericos</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-correo">
+                    <label for="correo">Correo</label>
+                    <div class="form-group-input">
+                        <input type="text" name="correo" id="correo" class="frm-input" required pattern="@misena.edu.co">
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">El formato del correo debe ser: nombre@correo.com</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-telefono">
+                    <label for="telefono">Telefono</label>
+                    <div class="form-group-input">
+                        <input type="text" name="telefono" id="telefono" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Solo se puede ingresar letras, max 40 caracteres</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-password">
+                    <label for="password">Password</label>
+                    <div class="form-group-input">
+                        <input type="password" name="password" id="password" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">Debe incluir min 8 caracteres una mayuscula una minuscula un numero y un
+                            caracter especial</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-password2">
+                    <label for="password2">Confirmar Password</label>
+                    <div class="form-group-input">
+                        <input type="password" name="password2" id="password2" class="frm-input" required>
+                        <i class="fa-solid fa-square-check frm-icono"></i>
+                        <span class="msn-error">La confirmacion de la contraseña no coincide</span>
+                    </div>
+                </div>
+                <div class="form-group" id="g-terminos">
+                    <div class="terminos">
+                        <input type="checkbox" name="terminos" id="terminos" class="frm-checkbox" required>
+                        <label>Acepta terminos de uso</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center>
+                        <div class="wrapper">
+                            <a class="button" id="peritri">Terminos</a>
+                        </div>
+                    </center>
+                </div><br>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div><br><br>
+    
+        <div id="ventanatri" class="modaltri">
+            <div class="contenidotri">
+                <span class="cerrarmodaltri"><i class="fa-solid fa-xmark icon"></i></span>
+                <h1 class="timo">Terminos y Condiciones</h1>
+                <p class="temo">Aqui van los terminos de uso</p>
+            </div>
+            
+        </div>
+
+    </main>
+    <script src="js/script6.js"></script>
+</body>
+</html>
