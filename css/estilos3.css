@@ -207,7 +207,8 @@ a.selected{
     padding-top: 200px;
     display: none;
 }
-
+/*contenido para cada modal*/
+/*circulo*/
 .contenidoModal{
     background-color: #FFFFFF;
     width: 60%;
@@ -233,6 +234,105 @@ a.selected{
 }
 
 .contenidoModal h2{
+    background-color: #dbd141;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+/*cuadrado*/
+.contenidoModal1{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+    align-items: center;
+}
+
+@keyframes animarmodal {
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.cerrarModal1{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModal1:hover{
+    cursor: pointer;
+}
+
+.contenidoModal1 h2{
+    background-color: #dbd141;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+/*triangulo*/
+.contenidoModal2{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+    align-items: center;
+}
+
+@keyframes animarmodal {
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.cerrarModal2{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModal2:hover{
+    cursor: pointer;
+}
+
+.contenidoModal2 h2{
+    background-color: #dbd141;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+/*Rectangulo*/
+.contenidoModal3{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+    align-items: center;
+}
+
+@keyframes animarmodal {
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.cerrarModal3{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModal3:hover{
+    cursor: pointer;
+}
+
+.contenidoModal3 h2{
     background-color: #dbd141;
     color: #FFFFFF;
     padding: 1rem 0;

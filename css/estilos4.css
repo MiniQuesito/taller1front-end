@@ -157,7 +157,7 @@ a.selected{
 }
 
 
-
+ 
 /*estilos formulario*/
 
 .modaltri{
@@ -196,19 +196,10 @@ a.selected{
     cursor: pointer;
 }
 
-form h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: crimson;
-}
+
 
 form label {
     color: black;
-}
-
-form input:hover {
-    color: blue;
 }
 
 .boton:hover{
@@ -222,18 +213,99 @@ form input:hover {
     padding: 5px;
 }
 
+.tittleform{
+    text-align: center; 
+}
+
 .form-container{
+    background-color: rgba(36, 15, 15, 0.537);
+    max-width: 40rem;
+    width: 100%;
+    color: rgb(241, 237, 231);
+    padding: 3rem;
+    margin: 50px auto;
+  }
+
+  .frm-input{
+    width: 100%;
+    min-height: 2.5rem;
+    padding-left: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.frm-input:focus{
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.terminos{
+    display: flex;
+    justify-content: center;
+}
+
+.terminos label{
+padding: 5px  10px;
+}
+
+.terminos input{
+    cursor: pointer;
+}
+
+.btn-enviar{
+    background-color: rgba(218, 143, 82, 0.74);
+    padding: 0.5rem 1rem;
+    border-radius: 5px ;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgba(226, 122, 36, 0.74);
+}
+
+.msn-error{
+    font-size: 12px;
+    color: rgb(224, 20, 20);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form-group{
+    margin: 0.5rem 0;
+}
+
+.form-group label{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-weight: 600;
+}
+
+.form-group-input{
     position: relative;
-	border:4px solid rgb(0, 0, 0);
-    border-radius: 10px;
-	list-style: none;
-	background: #ffffff;
-	color: rgb(134, 25, 25);
-	width: 70%;
-	max-width: 1000px;
-	margin: auto;
-	margin-right: 250px;
-    margin-left: 145px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: #b10b0b;
+}
+
+.frm-icono{
+    position: relative;
+    left: 95%;
+    bottom: 2rem;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.success .frm-icono{
+    color: rgb(4, 83, 4);
+}
+
+.error .frm-icono{
+    color: rgb(248, 12, 12);
+}
+
+.msn-error-visible{
+    visibility: visible;
+    opacity: 1;
 }

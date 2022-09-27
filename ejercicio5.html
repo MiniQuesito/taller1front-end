@@ -98,29 +98,31 @@
             <p>Es una figura plana limitada por una circunferencia. 
             Está formado por la circunferencia y la parte de plano que hay dentro de ella.</p>
             <img src="img/cuadrado.png">
-            <button id="abrirModal">Perimetro</button>
-            <button id="abrirModal">Area</button>
+            <button id="abrirModal1">Perimetro</button>
+            <button id="abrirModal1">Area</button>
         </div>
         <div>
             <h2>Triangulo</h2>
             <p>Es una figura plana limitada por una circunferencia. 
             Está formado por la circunferencia y la parte de plano que hay dentro de ella.</p>
             <img src="img/triangulo.png" style="width : 200px;">
-            <button id="abrirModal">Perimetro</button>
-            <button id="abrirModal">Area</button>
+            <button id="abrirModal2">Perimetro</button>
+            <button id="abrirModal2">Area</button>
         </div>
         <div>
             <h2>Rectangulo</h2>
             <p>Es una figura plana limitada por una circunferencia. 
             Está formado por la circunferencia y la parte de plano que hay dentro de ella.</p>
             <img src="img/circulo.png">
-            <button id="abrirModal">Perimetro</button>
-            <button id="abrirModal">Area</button>
+            <button id="abrirModal3">Perimetro</button>
+            <button id="abrirModal3">Area</button>
         </div>
      </div>
 
      <!--Empiezan los modales de las figuras-->
-     <div id="todaslasmodales">
+
+    <div id="todaslasmodales">
+
         <div id="ventanaModalCirculo" class="modal">
             <div class="contenidoModal">
                 <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
@@ -136,11 +138,66 @@
                <h2>Calcular Area</h2>
                 <div class="group-form">
                     <label for="perimetroC" class="form-label">Ingrese el radio del circulo para calcular su perimetro</label><br>
+                    <input type="text" class="form-control" id="areaC"><br>
+                    <button id="abrirModal" onclick="calcularP()">calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ventanaModalCuadrado" class="modal">
+            <div class="contenidoModal1">
+                <span class="cerrarModal1"><i class="fa-solid fa-xmark"></i></span>
+               <h2>Calcular Perimetro</h2>
+                <div class="group-form">
+                    <label for="perimetroC" id="ladocuadrado" class="form-label">Ingrese el lado del cuadrado para calcular su perimetro</label><br>
+                    <input type="text" class="form-control" id="perimetroC"><br>
+                    <button id="abrirModal" onclick="calcularPCu()">calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ventanaModalTriangulo" class="modal">
+            <div class="contenidoModal2">
+                <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span>
+               <h2>Calcular Perimetro</h2>
+                <div class="group-form">
+                    <label for="perimetroC" class="form-label">Ingrese el radio del circulo para calcular su perimetro</label><br>
+                    <input type="text" class="form-control" id="perimetroC"><br>
+                    <button id="abrirModal" onclick="calcularP()">calcular</button>
+                </div>
+            </div>
+            <div class="contenidoModal2">
+                <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span>
+               <h2>Calcular Area</h2>
+                <div class="group-form">
+                    <label for="perimetroC" class="form-label">Ingrese el radio del circulo para calcular su perimetro</label><br>
                     <input type="text" class="form-control" id="perimetroC"><br>
                     <button id="abrirModal" onclick="calcularP()">calcular</button>
                 </div>
             </div>
         </div>
+
+        <div id="ventanaModalRectangulo" class="modal">
+            <div class="contenidoModal3">
+                <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span>
+               <h2>Calcular Perimetro</h2>
+                <div class="group-form">
+                    <label for="perimetroC" class="form-label">Ingrese el radio del circulo para calcular su perimetro</label><br>
+                    <input type="text" class="form-control" id="perimetroC"><br>
+                    <button id="abrirModal" onclick="calcularP()">calcular</button>
+                </div>
+            </div>
+            <div class="contenidoModal3">
+                <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span>
+               <h2>Calcular Area</h2>
+                <div class="group-form">
+                    <label for="perimetroC" class="form-label">Ingrese el radio del circulo para calcular su perimetro</label><br>
+                    <input type="text" class="form-control" id="perimetroC"><br>
+                    <button id="abrirModal" onclick="calcularP()">calcular</button>
+                </div>
+            </div>
+        </div>
+
     </div>
     </main>
     <script src="js/script5.js"></script>

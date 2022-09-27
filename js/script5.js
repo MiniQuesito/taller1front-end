@@ -62,4 +62,37 @@ window.addEventListener("click",(e)=>{
 if(e.target==venmodal){
     venmodal.style.display="none"; 
 }
+});
+
+/*Circulo*/
+/*Acceder al botón para abrir el modal */
+let btnmodal1=document.getElementById("abrirModal1");
+//Acceder ventana modal
+let venmodal1=document.getElementById("ventanaModalCuadrado");
+//Acceder al botón Cerrar de la ventana modal
+let cermodal1=document.querySelector(".cerrarModal1");
+
+btnmodal.addEventListener("click",()=>{
+    venmodal1.style.display="block";
 })
+
+cermodal.addEventListener("click",()=>{
+    venmodal1.style.display="none"; 
+})
+
+window.addEventListener("click",(e)=>{
+if(e.target==venmodal1){
+    venmodal1.style.display="none"; 
+}
+})
+
+function calcularPCu(){
+    let lac=parseInt(document.getElementById("ladocuadrado").value);
+
+    let gh=parseInt(lac+lac+lac+lac);
+    alert("El Perimetro del cuadrado es: "+gh)
+}
+
+/*triangulo*/
+
+
