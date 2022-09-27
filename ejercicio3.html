@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2T</title>
+
+    <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="icon" href="img/favicon.png">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4>Arnold Retavisca</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="index.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio1.html">
+                <div class="option">
+                    <i class="fa-solid fa-ruler-vertical" title="Portafolio"></i>
+                    <h4>Longitudes</h4>
+                </div>
+            </a>
+            
+            <a href="ejercicio2.html">
+                <div class="option">
+                    <i class="fa-duotone fa-temperature-list" title="Cursos"></i>
+                    <h4>Convertir Temperatura</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio3.html">
+                <div class="option">
+                    <i class="fa-regular fa-triangle" title="Blog"></i>
+                    <h4>Tipo de triangulo</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio4.html">
+                <div class="option">
+                    <i class="fa-thin fa-signature"></i>
+                    <h4>Validacion de nombres</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio5.html">
+                <div class="option">
+                    <i class="fa-regular fa-hexagon" title="Nosotros"></i>
+                    <h4>Figuras Geometricas</h4>
+                </div>
+            </a>
+
+            <a href="ejercicio6.html">
+                <div class="option">
+                    <i class="fa-sharp fa-solid fa-badge-check" title="Formularios"></i>
+                    <h4>Formularios</h4>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+    <main>
+        <h1>EJERCICIO 3 - Tipos de triangulos</h1><br>
+        <p>Ingrese los datos de los lados del triangulo y determinara que tipo de triangulo es</p><br>
+
+        <div class="Triangulo">
+            <form class="form-ejercicios">
+                <div class="group-form">
+                    <label for="PrimerLado" class="form-label">Primer Lado</label>
+                    <input type="text" class="form-control" id="PrimerLado">
+                </div>
+                <br>
+                <div class="group-form">
+                    <label for="SegundoLado" class="form-label">Segundo Lado</label>
+                    <input type="text" class="form-control" id="SegundoLado">
+                </div>
+                <br>
+                <div class="group-form">
+                    <label for="TercerLado" class="form-label">Tercer Lado</label>
+                    <input type="text" class="form-control" id="TercerLado">
+                </div>
+                <br>
+                <center>
+                <button type="submit" onclick="triangulo()">RESULTADO</button>
+                </center>
+            </form>
+        </div>
+    </main>
+    <script src="js/script3.js"></script>
+</body>
+</html>
